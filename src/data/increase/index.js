@@ -1,7 +1,7 @@
 module.exports = [
     {
         keys: ["erratic", "erratico", "errático"],
-        name: "Errático"
+        name: "Errático",
     },
     {
         keys: ["fluctuating", "fluctuante"],
