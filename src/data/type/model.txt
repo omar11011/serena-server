@@ -1,0 +1,14 @@
+module.exports = {
+    keys: [],
+    name: "",
+    effectiveness: {
+        high: [],
+        low: [],
+        inmune: [],
+    },
+    image: {
+        icon: "",
+        teratipo: "",
+        banner: "",
+    },
+}
