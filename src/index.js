@@ -1,3 +1,3 @@
-const data = require("./data/egg_group")
+const data = require("./data/specie")
 console.log(data)
 // console.log("a")

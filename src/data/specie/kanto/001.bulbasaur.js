@@ -15,6 +15,6 @@ module.exports = {
     catch_ratio: 45,
     base_friendship: 50,
     hatching_steps: [5120, 5376],
-    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png",
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
 
 }
