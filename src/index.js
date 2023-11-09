@@ -1,3 +1,3 @@
-const data = require("./data/type")
+const data = require("./data/increase")
 console.log(data)
 // console.log("a")
