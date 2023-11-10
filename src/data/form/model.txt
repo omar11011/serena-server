@@ -1,0 +1,45 @@
+module.exports = {
+    keys: [],
+    name: "",
+    specie: "",
+    is_initial: false,
+    is_legendary: false,
+    is_mythical: false,
+    is_ub: false,
+    is_mega: false,
+    is_giga: false,
+    is_paradox: false,
+    is_special: false,
+    spawn: true,
+    region: "kanto",
+    types: [],
+    evolutions: [
+        { level: 1, friendship: 0, form: "", mega: false, giga: false, onlyBattle: false, item: null },
+    ],
+    stats: {
+        hp: 30,
+        attack: 30,
+        defense: 30,
+        spattack: 30,
+        spdefense: 30,
+        speed: 30,
+    },
+    movements: {
+        level: [
+            { level: 1, name: "" },
+        ],
+        machine: [].map(e => {
+            return { name: e }
+        }),
+        tutor: [].map(e => {
+            return { name: e }
+        }),
+        special: [].map(e => {
+            return { name: e }
+        }),
+    },
+    image: {
+        default: "",
+        shiny: "",
+    },
+}

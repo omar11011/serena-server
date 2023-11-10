@@ -12,7 +12,7 @@ module.exports = [
 ].map((e, i) => {
     return {
         id: i + 1,
-        key: e.toLowerCase(),
+        keys: [e.toLowerCase()],
         name: e,
     }
 })

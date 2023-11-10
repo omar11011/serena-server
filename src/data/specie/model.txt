@@ -1,0 +1,20 @@
+module.exports = {
+    pokedex: 1,
+    keys: [],
+    name: "",
+    category: "",
+    height: 1,
+    weight: 1,
+    egg_group: [],
+    gender: {
+        male: 50,
+        female: 50,
+    },
+    habitat: "pradera",
+    increase: "medio",
+    catch_ratio: 45,
+    base_friendship: 50,
+    hatching_steps: [5120, 5376],
+    image: "",
+
+}

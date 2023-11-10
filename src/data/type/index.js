@@ -20,10 +20,5 @@ module.exports = [
 ].map((e, i) => {
     e.id = i + 1
 
-    if (!e.effectiveness) e.effectiveness = {}
-    if (!e.effectiveness.high) e.effectiveness.high = []
-    if (!e.effectiveness.low) e.effectiveness.low = []
-    if (!e.effectiveness.inmune) e.effectiveness.inmune = []
-
     return e
 })
