@@ -1,4 +1,5 @@
 const findElement = require("../../functions/findElement")
+const setZMoves = require("../../functions/setZMoves")
 
 module.exports = class Form {
 
@@ -7,9 +8,6 @@ module.exports = class Form {
         this.name = props.name
         this.specie = findElement("Pokemon", "Specie", props.specie)
         this.is_initial = this.validateBoolean(props.is_initial)
-        this.is_legendary = this.validateBoolean(props.legendary)
-        this.is_mythical = this.validateBoolean(props.mythical)
-        this.is_ub = this.validateBoolean(props.ub)
         this.is_mega = this.validateBoolean(props.is_mega)
         this.is_giga = this.validateBoolean(props.is_giga)
         this.is_paradox = this.validateBoolean(props.is_paradox)
@@ -18,7 +16,7 @@ module.exports = class Form {
         this.region = findElement("Region", "Region", props.region || "kanto")
         this.types = this.validateArray(props.types).map(e => findElement("Type", "Type", e))
         this.evolutions = this.validateArray(props.evolutions.filter(e => e.form)).map(e => this.validateEvolution(e))
-        this.movements = this.validateMovement(props.movements)
+        this.movements = this.validateMovement(props)
         this.stats = this.validateStats(props.stats)
         this.image = this.validateImage(props.image)
     }
@@ -28,8 +26,8 @@ module.exports = class Form {
         return array
     }
 
-    validateBoolean(value) {
-        if (value === undefined) value = false
+    validateBoolean(value, valueDefault = false) {
+        if (value === undefined) value = valueDefault
         return value
     }
 
@@ -38,10 +36,7 @@ module.exports = class Form {
 
         if (
             !data.spawn && 
-            (
-                data.is_legendary || data.is_mythical || data.is_ub ||
-                data.is_initial || data.is_mega || data.is_giga || data.is_paradox || data.is_special
-            )
+            ( data.is_initial || data.is_mega || data.is_giga || data.is_paradox || data.is_special)
         ) value = false
 
         return value
@@ -59,18 +54,20 @@ module.exports = class Form {
     }
 
     validateMovement(data) {
-        if (!data) data = {}
-        const options = ["level", "machine", "tutor", "special"]
+        if (!data.movements) data.movements = {}
 
+        const options = ["level", "machine", "tutor", "special", "z"]
         options.map(e => {
-            data[e] = this.validateArray(data[e])
+            data.movements[e] = this.validateArray(data.movements[e])
 
-            data[e].map(f => {
+            if (e === "z") data.movements[e] = setZMoves(data.types, data.keys)
+
+            data.movements[e].map(f => {
                 if (!f.level) f.level = 1
             })
         })
 
-        return data
+        return data.movements
     }
 
     validateStats(data) {

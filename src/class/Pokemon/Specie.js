@@ -16,12 +16,20 @@ module.exports = class Specie {
         this.catch_ratio = props.catch_ratio || 45
         this.base_friendship = props.base_friendship || 50
         this.hatching_steps = this.validateArray(props.hatching_steps || [5120, 5376])
+        this.is_legendary = this.validateBoolean(props.legendary)
+        this.is_mythical = this.validateBoolean(props.mythical)
+        this.is_ub = this.validateBoolean(props.ub)
         this.image = props.image
     }
 
     validateArray(array) {
         if (!array || !Array.isArray(array)) array = []
         return array
+    }
+
+    validateBoolean(value, valueDefault = false) {
+        if (value === undefined) value = valueDefault
+        return value
     }
 
 }

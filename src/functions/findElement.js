@@ -1,11 +1,16 @@
+const loadData = require("./loadData")
+
 module.exports = (db, table, key) => {
     // Error: No hay clave
     if (!key) return {}
 
     // Archivo requerido
-    const DATA = require(`../data/${db}/${table}`)
+    const DATA = loadData(`${db}/${table}`).map((e, i) => {
+        e.id = i + 1
+        return e
+    })
     const CLASS = require(`../class/${db}/${table}`)
-
+    
     // Buscando data requerido
     const obj = DATA.find(e => e.keys.includes(key) || e.name === key)
 
