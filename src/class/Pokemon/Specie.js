@@ -1,4 +1,4 @@
-const findElement = require("../functions/findElement")
+const findElement = require("../../functions/findElement")
 
 module.exports = class Specie {
 
@@ -9,10 +9,10 @@ module.exports = class Specie {
         this.category = props.category
         this.height = props.height
         this.weight = props.weight
-        this.egg_group = this.validateArray(props.egg_group).map(e => findElement("egg_group", e))
+        this.egg_group = this.validateArray(props.egg_group).map(e => findElement("Pokemon", "Egg_Group", e))
         this.gender = props.gender
-        this.habitat = findElement("habitat", props.habitat || "pradera")
-        this.increase = findElement("increase", props.increase || "medio")
+        this.habitat = findElement("Pokemon", "Habitat", props.habitat || "pradera")
+        this.increase = findElement("Pokemon","Increase", props.increase || "medio")
         this.catch_ratio = props.catch_ratio || 45
         this.base_friendship = props.base_friendship || 50
         this.hatching_steps = this.validateArray(props.hatching_steps || [5120, 5376])

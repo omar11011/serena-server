@@ -1,11 +1,11 @@
-const findElement = require("../functions/findElement")
+const findElement = require("../../functions/findElement")
 
 module.exports = class Form {
 
     constructor(props) {
         this.id = props.id
         this.name = props.name
-        this.specie = findElement("specie", props.specie)
+        this.specie = findElement("Pokemon", "Specie", props.specie)
         this.is_initial = this.validateBoolean(props.is_initial)
         this.is_legendary = this.validateBoolean(props.legendary)
         this.is_mythical = this.validateBoolean(props.mythical)
@@ -15,8 +15,8 @@ module.exports = class Form {
         this.is_paradox = this.validateBoolean(props.is_paradox)
         this.is_special = this.validateBoolean(props.is_special)
         this.spawn = this.validateSpawn(props)
-        this.region = findElement("region", props.region || "kanto")
-        this.types = this.validateArray(props.types).map(e => findElement("type", e))
+        this.region = findElement("Region", "Region", props.region || "kanto")
+        this.types = this.validateArray(props.types).map(e => findElement("Type", "Type", e))
         this.evolutions = this.validateArray(props.evolutions.filter(e => e.form)).map(e => this.validateEvolution(e))
         this.movements = this.validateMovement(props.movements)
         this.stats = this.validateStats(props.stats)

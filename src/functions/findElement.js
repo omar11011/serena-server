@@ -1,10 +1,10 @@
-module.exports = (db, key) => {
+module.exports = (db, table, key) => {
     // Error: No hay clave
     if (!key) return {}
 
     // Archivo requerido
-    const DATA = require(`../data/${db}`)
-    const CLASS = require(`../class/${db}`)
+    const DATA = require(`../data/${db}/${table}`)
+    const CLASS = require(`../class/${db}/${table}`)
 
     // Buscando data requerido
     const obj = DATA.find(e => e.keys.includes(key) || e.name === key)
