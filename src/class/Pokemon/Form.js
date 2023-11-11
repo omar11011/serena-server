@@ -60,7 +60,7 @@ module.exports = class Form {
         options.map(e => {
             data.movements[e] = this.validateArray(data.movements[e])
 
-            if (e === "z") data.movements[e] = setZMoves(data.types, data.keys)
+            if (e === "z") data.movements[e] = setZMoves(data.types, data.specie)
 
             data.movements[e].map(f => {
                 if (!f.level) f.level = 1
