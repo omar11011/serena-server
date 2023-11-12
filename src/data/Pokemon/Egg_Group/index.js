@@ -56,7 +56,7 @@ module.exports = [
         name: "Hada",
     },
     {
-        keys: ["dragon"],
+        keys: ["dragon", "dragón"],
         name: "Dragón",
     },
 ].map((e, i) => {

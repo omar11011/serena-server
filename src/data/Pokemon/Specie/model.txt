@@ -1,20 +1,22 @@
 module.exports = {
     pokedex: 1,
-    keys: [],
-    name: "",
-    category: "",
+    keys: [],   CON MINÚSCULA
+    name: "",     NORMAL
+    category: "",   NORMAL
     height: 1,
     weight: 1,
-    egg_group: [],
+    egg_group: [],    CON MINÚSCULA
     gender: {
         male: 50,
         female: 50,
     },
-    habitat: "pradera",
-    increase: "medio",
+    habitat: "pradera",   CON MINÚSCULA
+    increase: "medio",    CON MINÚSCULA
     catch_ratio: 45,
     base_friendship: 50,
     hatching_steps: [5120, 5376],
+    is_legendary: false,
+    is_mythical: false,
+    is_ub: false,
     image: "",
-
 }
