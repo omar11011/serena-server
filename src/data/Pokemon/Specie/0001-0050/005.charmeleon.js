@@ -4,6 +4,7 @@ module.exports = {
   ...base,
     pokedex: 5,
     keys: ["charmeleon"],
+    category: "Llama",
     name: "Charmeleon",
     height: 1.1,
     weight: 19.0,
