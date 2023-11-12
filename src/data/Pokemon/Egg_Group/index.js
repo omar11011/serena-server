@@ -12,7 +12,7 @@ module.exports = [
         name: "Planta",
     },
     {
-        keys: ["bicho"],
+        keys: ["bicho", "insecto"],
         name: "Bicho",
     },
     {
@@ -36,15 +36,15 @@ module.exports = [
         name: "Campo",
     },
     {
-        keys: ["agua1", "agua 1"],
+        keys: ["agua1", "agua 1", "agua-1"],
         name: "Agua 1",
     },
     {
-        keys: ["agua2", "agua 2"],
+        keys: ["agua2", "agua 2", "agua-2"],
         name: "Agua 2",
     },
     {
-        keys: ["agua3", "agua 3"],
+        keys: ["agua3", "agua 3", "agua-3"],
         name: "Agua3 ",
     },
     {

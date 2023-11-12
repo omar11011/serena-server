@@ -4,15 +4,15 @@ module.exports = [
         name: "Pradera",
     },
     {
-        keys: ["bosque"],
+        keys: ["bosque", "selva"],
         name: "Bosque",
     },
     {
-        keys: ["agua_dulce", "agua dulce"],
+        keys: ["agua_dulce", "agua dulce", "agua-dulce", "agua fresca", "agua_fresca", "agua-fresca"],
         name: "Agua dulce",
     },
     {
-        keys: ["agua_salada", "agua salada"],
+        keys: ["agua_salada", "agua salada", "mar"],
         name: "Agua salada",
     },
     {
@@ -28,7 +28,7 @@ module.exports = [
         name: "Campo",
     },
     {
-        keys: ["ciudad", "city"],
+        keys: ["ciudad", "city", "urbano"],
         name: "Ciudad",
     },
     {
