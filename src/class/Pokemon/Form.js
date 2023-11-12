@@ -1,5 +1,6 @@
 const findElement = require("../../functions/findElement")
 const setZMoves = require("../../functions/setZMoves")
+const setDinaMoves = require("../../functions/setDinaMoves")
 
 module.exports = class Form {
 
@@ -9,7 +10,7 @@ module.exports = class Form {
         this.specie = findElement("Pokemon", "Specie", props.specie)
         this.is_initial = this.validateBoolean(props.is_initial)
         this.is_mega = this.validateBoolean(props.is_mega)
-        this.is_giga = this.validateBoolean(props.is_giga)
+        this.is_gigamax = this.validateBoolean(props.is_gigamax)
         this.is_paradox = this.validateBoolean(props.is_paradox)
         this.is_special = this.validateBoolean(props.is_special)
         this.spawn = this.validateSpawn(props)
@@ -36,7 +37,7 @@ module.exports = class Form {
 
         if (
             !data.spawn && 
-            ( data.is_initial || data.is_mega || data.is_giga || data.is_paradox || data.is_special)
+            ( data.is_initial || data.is_mega || data.is_gigamax || data.is_paradox || data.is_special)
         ) value = false
 
         return value
@@ -56,11 +57,12 @@ module.exports = class Form {
     validateMovement(data) {
         if (!data.movements) data.movements = {}
 
-        const options = ["level", "machine", "tutor", "special", "z"]
+        const options = ["level", "machine", "tutor", "special", "z", "gigamax", "dinamax"]
         options.map(e => {
             data.movements[e] = this.validateArray(data.movements[e])
 
             if (e === "z") data.movements[e] = setZMoves(data.types, data.specie)
+            if (e === "dinamax") data.movements[e] = setDinaMoves(data.types)
 
             data.movements[e].map(f => {
                 if (!f.level) f.level = 1
