@@ -12,7 +12,7 @@ module.exports = (db, table, key) => {
     const CLASS = require(`../class/${db}/${table}`)
     
     // Buscando data requerido
-    const obj = DATA.find(e => e.keys.includes(key) || e.name === key)
+    const obj = DATA.find(e => e.keys.includes(key) || e.name.toLowerCase() === key)
 
     // Error: Dato no encontrado
     if (!obj) return null
