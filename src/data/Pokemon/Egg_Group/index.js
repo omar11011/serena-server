@@ -36,16 +36,16 @@ module.exports = [
         name: "Campo",
     },
     {
-        keys: ["agua1"],
-        name: "Agua1",
+        keys: ["agua1", "agua 1"],
+        name: "Agua 1",
     },
     {
-        keys: ["agua2"],
-        name: "Agua2",
+        keys: ["agua2", "agua 2"],
+        name: "Agua 2",
     },
     {
-        keys: ["agua3"],
-        name: "Agua3",
+        keys: ["agua3", "agua 3"],
+        name: "Agua3 ",
     },
     {
         keys: ["monstruo"],
