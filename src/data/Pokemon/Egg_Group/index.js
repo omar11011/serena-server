@@ -1,6 +1,6 @@
 module.exports = [
     {
-        keys: ["desconocido"],
+        keys: ["desconocido", "ninguno"],
         name: "Desconocido",
     },
     {

@@ -1,0 +1,20 @@
+module.exports = {
+    pokedex: 145,
+    keys: ["zapdos"],
+    name: "Zapdos",
+    category: "Eléctrico",
+    height: 1.6,
+    weight: 52.6,
+    egg_group: ["ninguno"],
+    gender: {
+        male: 0,
+        female: 0,
+    },
+    habitat: "desconocido",
+    increase: "lento",
+    catch_ratio: 3,
+    base_friendship: 70,
+    hatching_steps: [20480, 21296],
+    is_legendary: true,
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png",
+}
