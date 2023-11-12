@@ -1,0 +1,20 @@
+module.exports = {
+    pokedex: 150,
+    keys: ["mewtwo"],
+    name: "Mewtwo",
+    category: "Genético",
+    height: 2.0,
+    weight: 122.0,
+    egg_group: ["ninguno"],
+    gender: {
+        male: 0,
+        female: 0,
+    },
+    habitat: "desconocido",
+    increase: "lento",
+    catch_ratio: 3,
+    base_friendship: 0,
+    hatching_steps: [30720, 31744],
+    is_legendary: true,
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+}

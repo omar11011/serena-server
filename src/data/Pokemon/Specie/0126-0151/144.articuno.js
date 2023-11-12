@@ -1,0 +1,20 @@
+module.exports = {
+    pokedex: 144,
+    keys: ["articuno"],
+    name: "Articuno",
+    category: "Congelación",
+    height: 1.7,
+    weight: 55.4,
+    egg_group: ["ninguno"],
+    gender: {
+        male: 0,
+        female: 0,
+    },
+    habitat: "desconocido",
+    increase: "lento",
+    catch_ratio: 3,
+    base_friendship: 70,
+    hatching_steps: [20480, 21296],
+    is_legendary: true,
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png",
+}
