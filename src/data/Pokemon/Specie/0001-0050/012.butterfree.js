@@ -1,4 +1,7 @@
+const base = JSON.parse(JSON.stringify(require("./011.metapod")))
+
 module.exports = {
+    ...base,
     pokedex: 12,
     keys: ["butterfree"],
     name: "Butterfree",
@@ -6,15 +9,7 @@ module.exports = {
     height: 1.1,
     weight: 32.0,
     egg_group: ["bicho", "volador"],
-    gender: {
-      male: 50,
-      female: 50
-    },
-    habitat: "pradera",
-    increase: "lento",
     catch_ratio: 45,
-    base_friendship: 70,
-    hatching_steps: [3840, 4096],
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
   }
   
