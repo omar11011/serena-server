@@ -1,0 +1,20 @@
+module.exports = {
+    pokedex: 146,
+    keys: ["moltres"],
+    name: "Moltres",
+    category: "Llama",
+    height: 2.0,
+    weight: 60.0,
+    egg_group: ["ninguno"],
+    gender: {
+        male: 0,
+        female: 0,
+    },
+    habitat: "desconocido",
+    increase: "lento",
+    catch_ratio: 3,
+    base_friendship: 70,
+    hatching_steps: [20480, 21296],
+    is_legendary: true,
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+}

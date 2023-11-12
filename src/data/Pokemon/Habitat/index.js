@@ -32,7 +32,7 @@ module.exports = [
         name: "Ciudad",
     },
     {
-        keys: ["rare", "raro"],
+        keys: ["rare", "raro", "desconocido"],
         name: "Raro",
     },
 ].map((e, i) => {

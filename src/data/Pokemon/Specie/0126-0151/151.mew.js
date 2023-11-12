@@ -1,0 +1,20 @@
+module.exports = {
+    pokedex: 151,
+    keys: ["mew"],
+    name: "Mew",
+    category: "Nuevo Especie",
+    height: 0.4,
+    weight: 4.0,
+    egg_group: ["ninguno"],
+    gender: {
+        male: 0,
+        female: 0,
+    },
+    habitat: "desconocido",
+    increase: "lento",
+    catch_ratio: 45,
+    base_friendship: 100,
+    hatching_steps: [30720, 31744],
+    is_mythical: true,
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+}
