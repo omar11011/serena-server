@@ -14,7 +14,7 @@ module.exports = {
     increase: "medio",    CON MINÚSCULA
     catch_ratio: 45,
     base_friendship: 50,
-    hatching_steps: [5120, 5376],
+    hatching_steps: [5120, 5376], REVISAR SI SE PUEDE ELIMINAR Y PONER COMO VALIDACION EN CODIGO POR RAREZA DEL POKEMON
     is_legendary: false,
     is_mythical: false,
     is_ub: false,
