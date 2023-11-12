@@ -10,7 +10,7 @@ module.exports = {
         male: 50,
         female: 50,
     },
-    habitat: "mar",
+    habitat: "agua dulce",
     increase: "medio",
     catch_ratio: 45,
     base_friendship: 35,
