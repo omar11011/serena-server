@@ -8,5 +8,6 @@ module.exports = {
     category: "Perforador",
     height: 1.3,
     weight: 40.5,
+    catch_ratio: 45,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png",
 }

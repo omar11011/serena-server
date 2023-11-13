@@ -8,5 +8,6 @@ module.exports = {
     category: "Coco",
     height: 10.9,
     weight: 120.0,
+    catch_ratio: 45,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png",
 }

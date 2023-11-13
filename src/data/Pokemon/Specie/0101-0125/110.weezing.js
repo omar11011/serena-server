@@ -8,5 +8,6 @@ module.exports = {
     category: "Gas Venenoso",
     height: 1.2,
     weight: 9.5,
+    catch_ratio: 60,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png",
 }

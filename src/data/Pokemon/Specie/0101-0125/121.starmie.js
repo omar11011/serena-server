@@ -8,5 +8,6 @@ module.exports = {
     category: "Misterioso",
     height: 1.1,
     weight: 80.0,
+    catch_ratio: 60,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
 }

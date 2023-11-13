@@ -8,5 +8,6 @@ module.exports = {
     category: "Atrocidad",
     height: 6.5,
     weight: 235.0,
+    catch_ratio: 45,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
 }

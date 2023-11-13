@@ -8,5 +8,6 @@ module.exports = {
     category: "Rayo",
     height: 0.8,
     weight: 24.5,
+    catch_ratio: 45,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
 }

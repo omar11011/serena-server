@@ -8,5 +8,6 @@ module.exports = {
     category: "Taladro",
     height: 1.9,
     weight: 120.0,
+    catch_ratio: 60,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png",
 }

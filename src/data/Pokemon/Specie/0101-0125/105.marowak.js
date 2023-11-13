@@ -8,5 +8,6 @@ module.exports = {
     category: "Hueso",
     height: 1.0,
     weight: 45.0,
+    catch_ratio: 75,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png",
 }
