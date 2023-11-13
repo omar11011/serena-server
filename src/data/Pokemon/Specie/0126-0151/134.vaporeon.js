@@ -9,5 +9,6 @@ module.exports = {
     height: 1.0,
     weight: 29.0,
     habitat: "agua-fresca",
+    catch_ratio: 45,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
 }

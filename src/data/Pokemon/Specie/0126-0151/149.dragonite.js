@@ -8,5 +8,6 @@ module.exports = {
     category: "Dragón",
     height: 2.2,
     weight: 210.0,
+    catch_ratio: 45,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
 }

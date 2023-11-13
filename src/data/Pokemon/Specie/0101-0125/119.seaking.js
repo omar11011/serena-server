@@ -8,5 +8,6 @@ module.exports = {
     category: "Pez Espada",
     height: 1.3,
     weight: 39.0,
+    catch_ratio: 60,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
 }

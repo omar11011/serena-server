@@ -8,5 +8,6 @@ module.exports = {
     category: "Espiral",
     height: 1.0,
     weight: 35.0,
+    catch_ratio: 45,
     image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png",
 }
