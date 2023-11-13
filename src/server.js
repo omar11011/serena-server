@@ -17,6 +17,6 @@ try {
 }
 
 const findElement = require("./functions/findElement")
-const element = findElement("Pokemon", "Specie", "electrode")
+const element = findElement("Pokemon", "Form", "venusaur")
 
 console.log(element)

@@ -46,10 +46,12 @@ module.exports = class Form {
     validateEvolution(data) {
         if (!data.level) data.level = 1
         if (!data.friendship) data.friendship = 0
+        if (!data.onlyBattle) data.onlyBattle = false
         if (!data.mega) data.mega = false
         if (!data.giga) data.giga = false
-        if (!data.onlyBattle) data.onlyBattle = false
         if (!data.item) data.item = null
+
+        if (data.mega || data.giga) data.onlyBattle = true
 
         return data
     }

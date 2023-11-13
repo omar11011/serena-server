@@ -12,7 +12,7 @@ module.exports = [
         name: "Agua dulce",
     },
     {
-        keys: ["agua_salada", "agua salada", "mar"],
+        keys: ["agua_salada", "agua salada", "mar", "acuatico", "acuático"],
         name: "Agua salada",
     },
     {
